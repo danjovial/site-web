@@ -1,0 +1,175 @@
+/* Style global */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #597280, #96789e, #577de4);
+  background-size: 400% 400%;
+  animation: metallicBlue 15s ease infinite;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animation fond métallisé */
+@keyframes metallicBlue {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Titres */
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+h1:hover, h2:hover {
+  color: #c0ffc4;
+}
+
+/* Liens avec effet ombre */
+.shadow-link {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.shadow-link:hover {
+  color: #2be189;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Boutons */
+.btn {
+  background-color: #2be189;
+  color: #1a1a1a;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #24c77b;
+}
+
+/* Image profil arrondie */
+img.rounded-circle {
+  border-radius: 50%;
+  border: 4px solid #ffffff50;
+  transition: transform 0.3s ease;
+}
+
+img.rounded-circle:hover {
+  transform: scale(1.05);
+}
+
+/* Image d'accueil */
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Texte en gras */
+strong {
+  color: #ffffff;
+}
+
+/* Carte projet zoomable */
+.project-card {
+  background-color: #ffffff15;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Zoom image projet */
+.modal-img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .project-card {
+    margin-bottom: 1rem;
+  }
+}
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent */
+  backdrop-filter: blur(5px); /* effet flou derrière */
+  border-bottom: 1px solid #ffffff30;
+}
+
+/* Liens de navigation */
+.navbar a {
+  color: #ffffff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #2be189;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Lien actif */
+.navbar a.active {
+  background-color: #2be189;
+  color: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+}
+footer {
+  background-color: #f8f9fa; /* Fond clair */
+  color: #343a40; /* Texte sombre pour contraste */
+  padding: 20px; /* Ajouter du padding pour rendre le footer visible */
+  position: relative; /* Position normale pour éviter les superpositions */
+  margin-top: 50px; /* S'assurer qu'il y a de l'espace au-dessus */
+  width: 100%; /* Pour que le footer prenne toute la largeur */
+  text-align: center; /* Centrer le texte du footer */
+}

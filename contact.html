@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Barre de navigation moderne -->
+  <nav class="navbar">
+    <a href="index.html">Accueil</a>
+    <a href="projets.html">Projets</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="apropos.html">À propos</a>
+  </nav>
+
+  <header class="bg-dark text-white text-center p-4">
+    <h1>Contactez-moi</h1>
+  </header>
+
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h5>📬 Mes coordonnées</h5><br />
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <img src="logo_gmail.png" alt="Logo Gmail" width="50" />
+          <strong>dansounga1@gmail.com</strong>
+        </div>
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <img src="logo_telephone.png" alt="Logo Téléphone" width="50" />
+          <strong>05 596 39 92 ; 06 937 99 01</strong>
+        </div>
+        <a target="_blank" href="https://x.com/Danjovial4">
+          <img src="logo_twitter.png" alt="Logo Twitter" width="50" />
+        </a>
+        <strong>Twitter</strong><br />
+        <a target="_blank" href="https://www.instagram.com/danjovial/">
+          <img src="logo_instagram.png" alt="Logo Instagram" width="50" />
+        </a>
+        <strong>Instagram</strong>
+      </div>
+
+      <div class="col-md-6">
+        <h5>📨 Formulaire de contact</h5>
+
+        <!-- ✅ Formulaire Formspree avec redirection -->
+        <form action="https://formspree.io/f/xdkeqzer" method="POST">
+          <!-- 🔁 Remplace ce lien par l’URL réelle de ta page GitHub Pages -->
+          <input type="hidden" name="_redirect" value="https://github.com/danjovial/mon-portfolio">
+          
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" name="nom" class="form-control" id="nom" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea name="message" class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light text-center p-3 mt-5">
+    <p>© 2025 Dan Jovial - Tous droits réservés</p>
+  </footer>  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
