@@ -103,28 +103,14 @@ strong {
   border-radius: 12px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .project-card {
-    margin-bottom: 1rem;
-  }
-}
 /* Barre de navigation */
 .navbar {
   display: flex;
   justify-content: center;
   gap: 1rem;
   padding: 1rem 0;
-  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent */
-  backdrop-filter: blur(5px); /* effet flou derrière */
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
   border-bottom: 1px solid #ffffff30;
 }
 
@@ -151,7 +137,7 @@ strong {
   color: #1a1a1a;
 }
 
-/* Responsive */
+/* Responsive navigation */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -164,21 +150,50 @@ strong {
     margin-bottom: 0.5rem;
   }
 }
+
+/* Footer */
 footer {
-  background-color: #f8f9fa; /* Fond clair */
-  color: #343a40; /* Texte sombre pour contraste */
-  padding: 20px; /* Ajouter du padding pour rendre le footer visible */
-  position: relative; /* Position normale pour éviter les superpositions */
-  margin-top: 50px; /* S'assurer qu'il y a de l'espace au-dessus */
-  width: 100%; /* Pour que le footer prenne toute la largeur */
-  text-align: center; /* Centrer le texte du footer */
+  background-color: #f8f9fa;
+  color: #343a40;
+  padding: 20px;
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
 }
-competence-box {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      padding: 20px;
-      border-radius: 15px;
-    }
-competence-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    }
+
+/* Section Compétences */
+#competences {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 3rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+#competences h5 {
+  color: #2be189;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#competences p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+#competences .col-md-4 {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#competences .col-md-4:last-child {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  #competences .col-md-4 {
+    border: none;
+    margin-bottom: 2rem;
+  }
+}
