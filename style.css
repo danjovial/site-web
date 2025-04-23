@@ -173,3 +173,12 @@ footer {
   width: 100%; /* Pour que le footer prenne toute la largeur */
   text-align: center; /* Centrer le texte du footer */
 }
+competence-box {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 20px;
+      border-radius: 15px;
+    }
+competence-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
