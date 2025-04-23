@@ -155,9 +155,9 @@ strong {
 footer {
   background-color: #f8f9fa;
   color: #343a40;
-  padding: 20px;
+  padding: 15px;
   position: relative;
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%;
   text-align: center;
 }
@@ -166,13 +166,13 @@ footer {
 #competences {
   background-color: #000;
   padding: 2rem 1.5rem; /* Réduit l'espace autour du contenu */
-  border-radius: 20px;
+  border-radius: 15px;
   border: 2px solid #2be189;
   box-shadow: 0 0 20px rgba(43, 225, 137, 0.4);
   color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 2rem;
-  max-width: 600px; /* Limite la largeur pour le rendre plus compact */
+  max-width: 700px; /* Limite la largeur pour le rendre plus compact */
   margin-left: auto; /* Centrage horizontal */
   margin-right: auto; /* Centrage horizontal */
 }
@@ -198,7 +198,7 @@ footer {
   padding: 0.8rem 1.2rem;
   margin-bottom: 0.8rem;
   border-left: 4px solid #2be189;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: background-color 0.3s ease;
   font-size: 1.1rem;
 }
