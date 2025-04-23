@@ -172,7 +172,7 @@ footer {
   color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 2rem;
-  max-width: 1000px; /* Limite la largeur pour le rendre plus compact */
+  max-width: 1500px; /* Limite la largeur pour le rendre plus compact */
   margin-left: auto; /* Centrage horizontal */
   margin-right: auto; /* Centrage horizontal */
 }
